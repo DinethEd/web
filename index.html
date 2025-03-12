@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub | Explore the Future</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Welcome to <span class="highlighted">Tech Hub</span></h1>
+        <p class="slide-in">Your go-to destination for tech news, trends, and tutorials!</p>
+        <button class="cta-btn highlight" onclick="followUs()">Get Started</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#articles" onclick="showSection('articles')">Articles</a></li>
+            <li><a href="#write" onclick="showSection('write')">Write an Article</a></li>
+            <li><a href="#team" onclick="showSection('team')">Our Team</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            <li><button onclick="authenticateAdmin()">Admin Login</button></li>
+        </ul>
+    </nav>
+    <section id="home" class="content">
+        <h2 class="zoom-in">Why Follow Us?</h2>
+        <p>Tech Hub provides the latest insights into the ever-changing tech landscape. From beginner-friendly tutorials to expert opinions, we cover it all!</p>
+        <button class="pulse highlight" onclick="showSection('articles')">Explore Articles</button>
+    </section>
+    <section id="articles" class="articles" style="display: none;">
+        <h2>Latest Articles</h2>
+        <div id="articleList" class="fade-in"></div>
+    </section>
+    <section id="write" class="write-section" style="display: none;">
+        <h2>Share Your Knowledge</h2>
+        <textarea id="articleContent" placeholder="Share your insights here..." rows="10" cols="50"></textarea>
+        <br>
+        <button class="highlight" onclick="publishArticle()">Publish</button>
+    </section>
+    <section id="team" style="display: none;">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>Dineth E.</h3>
+                <p>Founder & Tech Enthusiast</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>Alex T.</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h3>Emma R.</h3>
+                <p>Content Strategist</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 <span class="highlighted">Tech Hub</span>. Powered by Passion. Connect with us on 
+        <a href="#"><i class="fab fa-facebook"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a> 
+        <a href="#"><i class="fab fa-linkedin"></i></a>.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
